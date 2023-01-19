@@ -13,7 +13,7 @@ public class Hooks {
     public static void OpenBrowser()
     {
         //1-set System property
-        System.setProperty("webdriver.chrome.driver","C:\\Program Files\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Driver\\chromedriver.exe");
 
         //2- Create new object from Webdriver
         driver = new ChromeDriver();

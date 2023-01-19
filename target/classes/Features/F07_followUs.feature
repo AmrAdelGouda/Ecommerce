@@ -14,8 +14,6 @@ Feature: F07_followUs | users could open followUs links
     And user can switch between two tabs
     Then "https://twitter.com/nopCommerce" is opened in new tab
 #3
-#  #actual result is https://demo.nopcommerce.com/news/rss/1
-#  #however expected result should be https://demo.nopcommerce.com/new-online-store-is-open
   Scenario: user opens rss link
     Given user opens "rss" link
     Then "https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab
